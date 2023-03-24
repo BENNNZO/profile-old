@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion, stagger } from "framer-motion"
 
 import Logo from '../assets/img/logo-transparent.svg'
 import Blob_01 from '../assets/img/hero/blob-01.svg'

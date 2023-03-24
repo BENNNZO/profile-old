@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import Variants from '../assets/constants'
+import { motion } from "framer-motion"
 
 export default function Experience() {
     return (
         <div className="wrapper-exp">
-            <h2>EXPERIENCE</h2>
+            <motion.div initial={Variants.offScreen} whileInView={Variants.onScreen}>
+                <h2>EXPERIENCE</h2>
+            </motion.div>
         </div>
     )
 }

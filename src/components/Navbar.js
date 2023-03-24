@@ -30,6 +30,7 @@ export default function Navbar() {
                     )
                 })}
             </ul>
+            <div className="bottom-line"></div>
         </nav>
     )
 }

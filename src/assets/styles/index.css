@@ -23,3 +23,23 @@ li {
 nav a, nav a:focus, nav a:active, nav a:hover, nav a:visited {
     text-decoration: none;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #00ff91 #007552;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #184d3d;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+  }
