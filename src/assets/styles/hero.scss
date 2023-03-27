@@ -1,0 +1,119 @@
+.wrapper-hero {
+    position: relative;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    h1, h2 {
+        position: relative;
+        font-weight: 900;
+        z-index: 2;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+        transition: all 0.6s cubic-bezier(0, 0, 0.29, 1);
+        font-family: 'nevis', sans-serif;
+        letter-spacing: -3px;
+    }
+    h1 {
+        font-size: 8rem;
+        transform: translateX(-15px);
+    }
+    h2 {
+        font-size: 4rem;
+        transform: translate(57px, -20px);
+    }
+    .hero-desc p {
+        width: 400px;
+        font-size: 2rem;
+    }
+    .logo {
+        position: absolute;
+        max-height: 750px;
+        opacity: 0.25;
+        top: 15vh;
+        left: 10vw;
+        transform: rotate(-15deg) translate(0px, 0px);
+        z-index: 1;
+        pointer-events: none;
+        transition: all 0.6s ease-out;
+    }
+    .name-background {
+        position: relative;
+        display: grid;
+        align-content: center;
+    }
+    .blob {
+        position: absolute;
+        opacity: 0;
+        transition: all 0.6s cubic-bezier(0, 0, 0.29, 1);
+        pointer-events: none;
+        &:nth-child(1) {
+            transform: translate(-25%, -35%);
+        }
+        &:nth-child(2) {
+            transform: translate(0%, -35%);
+        }
+        &:nth-child(3) {
+            transform: translate(25%, -35%);
+        }
+    }
+    .name:hover {
+        .blob:nth-child(1) {
+            transform: translate(-35%, -40%) rotate(-20deg);
+            opacity: 0.25;
+        }
+        .blob:nth-child(2) {
+            transform: translate(0%, -40%);
+            opacity: 0.25;
+        }
+        .blob:nth-child(3) {
+            transform: translate(35%, -40%) rotate(20deg);
+            opacity: 0.25;
+        }
+        h1, h2 {
+            letter-spacing: 5px;
+        }
+        .logo {
+            transform: rotate(-15deg) translate(-25px, 0px);
+            opacity: 0;
+        }
+    }
+    .scroll {
+        position: absolute;
+        top: 85vh;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease-out;
+        }
+        &:hover {
+            height: 40px;
+            .scroll-icon {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            p {
+                opacity: 0.75;
+                transform: translateY(0px);
+            }
+        }
+    
+    }
+    .scroll-icon {
+        position: relative;
+        height: 100%;
+        top: 0px;
+        filter: drop-shadow(0 0 50px rgb(0, 0, 0, 0.5));
+        transform: translateY(-15px);
+        opacity: 0.5;
+        transition: all 0.3s ease-out;
+    }
+}

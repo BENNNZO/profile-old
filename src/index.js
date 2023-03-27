@@ -6,12 +6,12 @@ import ReactDOM from 'react-dom/client';
 import { Navbar, Hero, Skills, Experience, Projects } from './components/index'
 
 /* ----------------------------------- CSS ---------------------------------- */
-import './assets/styles/index.css'
-import './assets/styles/navbar.css'
-import './assets/styles/hero.css'
-import './assets/styles/skills.css'
-import './assets/styles/experience.css'
-import './assets/styles/projects.css'
+import './assets/styles/index.scss'
+import './assets/styles/navbar.scss'
+import './assets/styles/hero.scss'
+import './assets/styles/skills.scss'
+import './assets/styles/experience.scss'
+import './assets/styles/projects.scss'
 
 /* ----------------------------------- APP ---------------------------------- */
 ReactDOM.createRoot(document.getElementById('root')).render(

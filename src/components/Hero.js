@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion, stagger } from "framer-motion"
 
 import Logo from '../assets/img/logo-transparent.svg'
 import Blob_01 from '../assets/img/hero/blob-01.svg'
@@ -23,8 +22,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="hero-desc">
-                <p>Hey! My name is Benjamin Phillips. I'm 18 years old and currently am studying to become a web developer. Thank you for checking out my profile hope you enjoy!
-                </p>
+                <p>MERN Stack, Front-end, Web Developer</p>
             </div>
             <div className="scroll">
                 <p>SCROLL!</p>
