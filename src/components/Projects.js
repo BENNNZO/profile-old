@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Variants from '../assets/constants'
 import Project from './Project'
 import { motion } from "framer-motion"
@@ -6,23 +6,34 @@ import { motion } from "framer-motion"
 import retrogram from '../assets/img/projects/retrogram.png'
 import password from '../assets/img/projects/password-gen.png'
 import nspsports from '../assets/img/projects/NSP-sports.png'
+import riveroak from '../assets/img/projects/river-oak.png'
 
 export default function Projects() {
     const projects = [
         {
-            title: 'RETROGRAM',
+            title: 'Chat room',
             img: retrogram,
-            desc: 'A simple chat room app made with a backend database with usee logins and '
+            desc: 'The main idea with this project was to improve my knoledge and experience with backend frameworks like express and mySQL.'
         },
         {
-            title: 'RETROGRAM',
+            title: 'River Oak Properties',
+            img: riveroak,
+            desc: "A simple dashboard for the Quartar world cup 2022 some of the api's dont't work anymore because the world cup is over but the main idea is still there."
+        },
+        {
+            title: 'Password Generator',
             img: password,
-            desc: 'A simple chat room app made with a backend database with usee logins and '
+            desc: 'This is a simple password generator that was for homework when i was in a class but i think this is a good example of my desire to over design things.'
         },
         {
-            title: 'RETROGRAM',
+            title: 'Sports Dashboard',
             img: nspsports,
-            desc: 'A simple chat room app made with a backend database with usee logins and '
+            desc: "A simple dashboard for the Quartar world cup 2022 some of the api's dont't work anymore because the world cup is over but the main idea is still there."
+        },
+        {
+            title: 'Discord Clone (Hype)',
+            img: riveroak,
+            desc: "A clone of discord with a working friend request system with provate messages and private servers that you can invite multiple friends to. ontop of all that it also has working live voice and video calls that you can have multiple friends join"
         }
     ]
     return (
@@ -31,9 +42,11 @@ export default function Projects() {
                 <h2>PROJECTS</h2>
             </motion.div>
             <div className="projects">
-                <Project title={projects[0].title} img={projects[0].img} desc={projects[0].desc}/>
-                <Project title={projects[1].title} img={projects[1].img} desc={projects[1].desc}/>
-                <Project title={projects[2].title} img={projects[2].img} desc={projects[2].desc}/>
+                {projects.length !== 0 && projects.map(project => {
+                    return (
+                        <Project title={project.title} img={project.img} desc={project.desc} />
+                    )
+                })}
             </div>
         </div>
     )

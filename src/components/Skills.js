@@ -20,9 +20,9 @@ export default function Skills() {
                 <Skill id='1' icon={<HTML />} title='HTML' percentage='95%'/>
                 <Skill id='2' icon={<CSS />} title='CSS' percentage='92%'/>
                 <Skill id='3' icon={<JS />} title='JS' percentage='85%'/>
-                <Skill id='4' icon={<MongoDB />} title='Mongo DB' percentage='30%'/>
+                <Skill id='4' icon={<MongoDB />} title='Mongo DB' percentage='60%'/>
                 <Skill id='5' icon={<NodeJS />} title='Node JS' percentage='75%'/>
-                <Skill id='6' icon={<ReactJS />} title='React' percentage='50%'/>
+                <Skill id='6' icon={<ReactJS />} title='React' percentage='70%'/>
             </ul>
         </div>
     )

@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 /* ------------------------------- COMPONENTS ------------------------------- */
-import { Navbar, Hero, Skills, Experience, Projects } from './components/index'
+import App from './app'
 
 /* ----------------------------------- CSS ---------------------------------- */
 import './assets/styles/index.scss'
@@ -16,10 +16,6 @@ import './assets/styles/projects.scss'
 /* ----------------------------------- APP ---------------------------------- */
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
-    <Hero />
-    <Skills />
-    <Experience />
-    <Projects />
+    <App />
   </React.StrictMode>
 );
