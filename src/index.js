@@ -12,6 +12,7 @@ import './assets/styles/hero.scss'
 import './assets/styles/skills.scss'
 import './assets/styles/experience.scss'
 import './assets/styles/projects.scss'
+import './assets/styles/about-me.scss'
 
 /* ----------------------------------- APP ---------------------------------- */
 ReactDOM.createRoot(document.getElementById('root')).render(

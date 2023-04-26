@@ -7,6 +7,7 @@ export default function App() {
         <section className='wrapper-app'>
             <Navbar />
             <Hero />
+            <AboutMe />
             <Skills />
             {/* <Experience /> */}
             <Projects />

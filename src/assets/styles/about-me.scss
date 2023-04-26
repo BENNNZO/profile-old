@@ -1,3 +1,27 @@
 .wrapper-about-me {
-    
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0px 50px;
+        justify-content: center;
+        align-items: center;
+        img {
+            position: relative;
+            border-radius: 10px;
+            max-width: 50%;
+            left: 45%;
+            filter: drop-shadow(0 0 20px #00000060);
+        }
+        .br {
+            margin-top: 20px;
+        }
+        p {
+            width: 50%;
+            color: white;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
