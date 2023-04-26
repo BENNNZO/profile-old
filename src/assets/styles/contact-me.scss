@@ -1,0 +1,119 @@
+.wrapper-contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+    h2 {
+        font-size: 3.5rem;
+    }
+    .sending {
+        background-color: rgb(205, 236, 255);
+        color: rgb(67, 94, 110);
+        padding: 10px 20px;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 20px rgba(38, 104, 82, 0.445));
+    }
+    .sent, .sent::after {
+        background-color: rgb(207, 255, 207);
+        color: rgb(79, 117, 78);
+        padding: 10px 20px;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 20px rgba(38, 104, 82, 0.445));
+    }
+    .sent {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: 'Thank you for contacting me I will be sure to get back to you as soon as possible!';
+            top: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+    }
+    .form-positioning {
+        position: relative;
+        form {
+            padding: 35px 20px;
+            background-image: linear-gradient(to bottom, #78c9b7a1, transparent);
+            border-radius: 15px;
+            input {
+                border: none;
+                padding: 8px 15px;
+                border-radius: 15px;
+                filter: drop-shadow(0 0 15px rgba(20, 129, 114, 0.537));
+            }
+            p {
+                padding-left: 15px;
+                color: #c5ffff;
+            }
+            .full-name {
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 20px;
+                }
+            }
+            .full-name, .email-body, .email, .phone-number {
+                padding: 0px 20px 20px 20px;
+            }
+            .full-name, .email-body {
+                width: 100%;
+            }
+            .email, .phone-number {
+                display: inline-block;
+                width: 50%;
+            }
+            .email-body {
+                width: 100%;
+                input {
+                    width: 100%;
+                    height: 100px;
+                }
+                textarea {
+                    border: none;
+                    padding: 8px 15px;
+                    border-radius: 15px;
+                    filter: drop-shadow(0 0 15px rgba(20, 129, 114, 0.537));
+                    resize: none;
+                    width: 100%;
+                    height: 125px;
+                }
+            }
+            button {
+                padding: 8px 15px;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(57, 175, 146);
+                color: white;
+                filter: drop-shadow(0 0 15px rgba(20, 129, 114, 0.537));    
+                margin-left : 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper-contact {
+        padding: 20px;
+        .options {
+            flex-direction: column !important;
+            gap: 10px;
+        }
+        .full-name {
+            div {
+                flex-direction: column !important;
+            }
+        }
+        .email, .phone-number {
+            width: 100% !important;
+            input {
+                width: 100% !important;
+            }
+        }
+    }
+}

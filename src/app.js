@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, Hero, Skills, Experience, Projects, AboutMe } from './components/index'
+import { Navbar, Hero, Skills, Projects, AboutMe, ContactMe } from './components/index'
 
 export default function App() {
     return (
@@ -9,8 +9,8 @@ export default function App() {
             <Hero />
             <AboutMe />
             <Skills />
-            {/* <Experience /> */}
             <Projects />
+            <ContactMe />
         </section>
     )
 }

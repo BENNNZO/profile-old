@@ -3,7 +3,6 @@ import Variants from '../assets/constants'
 import { motion } from "framer-motion"
 
 import Me from '../assets/img/about-me/Profile Pic.jpg'
-import Resume from '../assets/img/about-me/Resume.pdf'
 
 export default function AboutMe() {
     return (
