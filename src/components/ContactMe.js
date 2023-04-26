@@ -22,7 +22,7 @@ export default function ContactMe() {
         phoneRef.current.value = ''
         setSending(true)
         console.log('submitting data')
-        axios.post('https://benjamin-profile.herokuapp.com/email', {
+        axios.post('/email', {
             subject: '⚠️ PROFILE CONTACT',
             first: firstRef.current.value,
             last: lastRef.current.value,
