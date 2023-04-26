@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Variants from '../assets/constants'
 import { motion } from "framer-motion"
 

@@ -15,14 +15,14 @@ export default function ContactMe() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        // firstRef.current.value = ''
-        // lastRef.current.value = ''
-        // textRef.current.value = ''
-        // emailRef.current.value = ''
-        // phoneRef.current.value = ''
+        firstRef.current.value = ''
+        lastRef.current.value = ''
+        textRef.current.value = ''
+        emailRef.current.value = ''
+        phoneRef.current.value = ''
         setSending(true)
         console.log('submitting data')
-        axios.post(process.env.REACT_APP_BASE_URL, {
+        axios.post('/email', {
             subject: '⚠️ PROFILE CONTACT',
             first: firstRef.current.value,
             last: lastRef.current.value,
