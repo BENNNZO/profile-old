@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61ee1542.css",
+    "main.js": "/static/js/main.f12f5f37.js",
+    "static/media/Profile Pic.jpg": "/static/media/Profile Pic.0b28934f8ee5b22eae07.jpg",
+    "static/media/river-oak.png": "/static/media/river-oak.172f7646c3e699101693.png",
+    "static/media/NSP-sports.png": "/static/media/NSP-sports.3985ed5aad123d651051.png",
+    "static/media/hype.png": "/static/media/hype.61ff05793dfd2f126882.png",
+    "static/media/password-gen.png": "/static/media/password-gen.e3d47930e8a71540fbab.png",
+    "static/media/retrogram.png": "/static/media/retrogram.33609ba8bed2bf5f8562.png",
+    "static/media/react.svg": "/static/media/react.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/nodejs.svg": "/static/media/nodejs.a8a96f27c0e6f68b4a597cdc55c1b059.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/css-3.svg": "/static/media/css-3.fffc53e6df490889ec4cfce5c298ceb8.svg",
+    "static/media/logo-transparent.svg": "/static/media/logo-transparent.2a90a898ab96f73e0f5251a9299c841d.svg",
+    "static/media/html-5.svg": "/static/media/html-5.81ddc20a575660701a77721cc590c718.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.8869f2f6c8ef3b4798e6fa8649bfaac0.svg",
+    "index.html": "/index.html",
+    "static/media/blob-01.svg": "/static/media/blob-01.7453e459686dd4b7f6f02cc7b9ac3b5a.svg",
+    "static/media/blob-02.svg": "/static/media/blob-02.a0c13a9023431f916576b52b284de91d.svg",
+    "static/media/blob-03.svg": "/static/media/blob-03.f8069e003020b1c7cdf2e3b87dbbd268.svg",
+    "static/media/scroll.svg": "/static/media/scroll.e1d687afafcab23562e2f78346cd434e.svg",
+    "main.61ee1542.css.map": "/static/css/main.61ee1542.css.map",
+    "main.f12f5f37.js.map": "/static/js/main.f12f5f37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61ee1542.css",
+    "static/js/main.f12f5f37.js"
+  ]
+}
