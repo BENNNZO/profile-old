@@ -26,3 +26,41 @@
         }
     }
 }
+
+@media screen and (max-width: 1300px) {
+    .wrapper-about-me {
+        div {
+            p {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper-about-me {
+        div {
+            grid-template-columns: 1fr 1.5fr;
+            img {
+                max-width: 100%;
+                left: 0;
+            }
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper-about-me {
+        div {
+            display: flex;
+            flex-direction: column;
+            img {
+                max-width: 75%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

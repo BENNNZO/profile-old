@@ -56,3 +56,43 @@ nav {
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    nav {
+        padding: 0 50px;
+        height: 60px;
+        a {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        padding: 0 0px;
+        height: 60px;
+        justify-content: center;
+        ul {
+            justify-content: center;
+            padding-right: 0;
+        }
+        img {
+            display: none
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-content: center;
+            padding-right: 0;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+}

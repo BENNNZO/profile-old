@@ -10,13 +10,13 @@
     ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr;
-        gap: 25px;
+        column-gap: 100px;
+        row-gap: 25px;
         padding: 20px 100px 100px 100px;
         justify-content: center;
     }
     li {
-        width: 500px;
+        width: 100%;
         color: white;
         justify-self: center;
     }
@@ -44,5 +44,21 @@
         width: 100%;
         background-color: black;
         opacity: 0.2;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .wrapper-skills {
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper-skills {
+        ul {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }

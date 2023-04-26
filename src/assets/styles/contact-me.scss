@@ -98,12 +98,8 @@
 }
 
 @media screen and (max-width: 600px) {
-    .wrapper-contact {
+    .wrapper-contact-me {
         padding: 20px;
-        .options {
-            flex-direction: column !important;
-            gap: 10px;
-        }
         .full-name {
             div {
                 flex-direction: column !important;
@@ -113,6 +109,11 @@
             width: 100% !important;
             input {
                 width: 100% !important;
+            }
+        }
+        .form-positioning {
+            form {
+                border-radius: 30px !important;
             }
         }
     }

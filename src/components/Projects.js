@@ -18,9 +18,9 @@ export default function Projects() {
             link: 'https://project-3-hype.herokuapp.com/'
         },
         {
-            title: 'River Oak Properties (Website not deployed yet)',
+            title: 'River Oak Properties',
             img: riveroak,
-            desc: "This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally",
+            desc: "(Website not deployed yet) This is a website made for a property managment company with a working contact form and page that allows users to apply to rent a house digitally",
             link: ''
         },
         {

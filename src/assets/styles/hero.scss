@@ -13,7 +13,7 @@
         font-weight: 900;
         z-index: 2;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-        transition: all 0.6s cubic-bezier(0, 0, 0.29, 1);
+        transition: all 0.2s cubic-bezier(0, 0, 0.29, 1);
         font-family: 'nevis', sans-serif;
         letter-spacing: -3px;
     }
@@ -38,7 +38,7 @@
         transform: rotate(-15deg) translate(0px, 0px);
         z-index: 1;
         pointer-events: none;
-        transition: all 0.6s ease-out;
+        transition: all 0.2s ease-out;
     }
     .name-background {
         position: relative;
@@ -48,7 +48,7 @@
     .blob {
         position: absolute;
         opacity: 0;
-        transition: all 0.6s cubic-bezier(0, 0, 0.29, 1);
+        transition: all 0.2s cubic-bezier(0, 0, 0.29, 1);
         pointer-events: none;
         &:nth-child(1) {
             transform: translate(-25%, -35%);
@@ -92,7 +92,7 @@
         p {
             opacity: 0;
             transform: translateY(10px);
-            transition: all 0.3s ease-out;
+            transition: all 0.2s ease-out;
         }
         &:hover {
             height: 40px;
@@ -114,6 +114,47 @@
         filter: drop-shadow(0 0 50px rgb(0, 0, 0, 0.5));
         transform: translateY(-15px);
         opacity: 0.5;
-        transition: all 0.3s ease-out;
+        transition: all 0.2s ease-out;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .wrapper-hero {
+        .hero-desc {
+            visibility: hidden;
+            display: none;
+            pointer-events: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper-hero {
+        .logo {
+            max-height: 750px;
+            opacity: 0.25;
+            transition: all 0.2s ease-out;
+        }
+        h1 {
+            font-size: 6rem;
+            transform: translateX(-15px);
+        }
+        h2 {
+            font-size: 3rem;
+            transform: translate(57px, -40px);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper-hero {
+        h1 {
+            font-size: 3.5rem;
+            transform: translateX(-15px);
+        }
+        h2 {
+            font-size: 2rem;
+            transform: translate(57px, -40px);
+        }
     }
 }
