@@ -12,7 +12,7 @@ import { ReactComponent as ReactJS } from '../assets/img/skills/react.svg'
 
 export default function Skills() {
     return (
-        <div className="wrapper-skills">
+        <div className="wrapper-skills" id='my-skills'>
             <motion.div initial={Variants.offScreen} whileInView={Variants.onScreen}>
                 <h2>SKILLS</h2>
             </motion.div>

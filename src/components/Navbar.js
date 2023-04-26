@@ -6,14 +6,22 @@ export default function Navbar() {
     const navLinks = [
         {
             id: 1,
+            link: 'about-me',
             title: 'About Me'
         },
         {
+            id: 3,
+            link: 'my-skills',
+            title: 'My Skills'
+        },
+        {
             id: 2,
+            link: 'my-work',
             title: 'My Work'
         },
         {
-            id: 3,
+            id: 4,
+            link: 'contact-me',
             title: 'Contact Me'
         }
     ]
@@ -25,7 +33,7 @@ export default function Navbar() {
                 {navLinks.map((link) => {
                     return (
                         <li key={link.id} className={ Active === link.title ? 'navlink navbar-active' : 'navlink navbar-inactive' }>
-                            <a href={`#${link.title}`} onClick={() => setActive(link.title)}>{link.title}</a>
+                            <a href={`#${link.link}`} onClick={() => setActive(link.title)}>{link.title}</a>
                         </li>
                     )
                 })}

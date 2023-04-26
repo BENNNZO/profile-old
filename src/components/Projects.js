@@ -43,7 +43,7 @@ export default function Projects() {
         }
     ]
     return (
-        <div className='wrapper-projects'>
+        <div className='wrapper-projects' id='my-work'>
             <motion.div initial={Variants.offScreen} whileInView={Variants.onScreen}>
                 <h2>PROJECTS</h2>
             </motion.div>
