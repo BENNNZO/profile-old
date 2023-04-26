@@ -15,11 +15,6 @@ export default function ContactMe() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        firstRef.current.value = ''
-        lastRef.current.value = ''
-        textRef.current.value = ''
-        emailRef.current.value = ''
-        phoneRef.current.value = ''
         setSending(true)
         console.log('submitting data')
         axios.post('/email', {
