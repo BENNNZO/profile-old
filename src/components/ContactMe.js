@@ -4,7 +4,7 @@ import axios from 'axios'
 import '../assets/styles/contact-me.scss'
 
 export default function ContactMe() {
-    const [sent, setSent] = useState(true)
+    const [sent, setSent] = useState(false)
     const [sending, setSending] = useState(false)
 
     let firstRef = useRef()
