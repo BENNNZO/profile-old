@@ -31,6 +31,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 1rem;
+            text-align: center;
             white-space: nowrap;
         }
     }
@@ -94,6 +95,15 @@
                 margin-left : 20px;
                 cursor: pointer;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper-contact-me {
+        .sent::after {
+            width: 50vw;
+            white-space: pre-wrap;
         }
     }
 }
